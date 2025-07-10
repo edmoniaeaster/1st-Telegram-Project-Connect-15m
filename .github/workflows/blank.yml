@@ -89,11 +89,11 @@ jobs:
             <b>   🚀READY FOR NEXT QUEST🚀  </b>
             <b>╚═══🎮══════════🎮═══╝</b>
 
-            <b>• 🎮 New level :</b> <b>${{ env.LEVEL_NAME }}</b>
-            <b>• 🗂️ Repository :</b> <b>${{ github.repository }}</b>
-            <b>• 🕒 Time :</b> <b>${{ env.FORMATTED_TIME }}</b>
-            <b>• 🔢 Notification number :</b> <b>${{ env.NOTIF_COUNTER }}</b>
-            <b>• 👤 Auto commit by :</b> <b>edmoniaeaster@gmail.com</b>
+            <b>• 🧩 Feature ID :</b> <b>${{ env.LEVEL_NAME }}</b>
+            <b>• 🌐 Git Repo :</b> <b>${{ github.repository }}</b>
+            <b>• ⏳ Deployed At :</b> <b>${{ env.FORMATTED_TIME }}</b>
+            <b>• 🧾 CI Run # :</b> <b>${{ env.NOTIF_COUNTER }}</b>
+            <b>• 🔐 Commit Auth :</b> <b>edmoniaeaster@gmail.com</b>
 
             <b>#NextLevel #GamingMode</b>
             <b>💯 This script was 100% created by Abie Haryatmo</b>
