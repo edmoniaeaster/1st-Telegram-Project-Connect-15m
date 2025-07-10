@@ -17,11 +17,11 @@ jobs:
       - name: ✨ Gaming Level Unlocked Banner
         run: |
           echo ""
-          echo "╔═══🎮════════════════════🎮═══╗"
-          echo "║ 🕹️ LEVEL UP UNLOCKED!  🕹️  ║"
-          echo "║ ⭐️ ACHIEVEMENT UNLOCKED! ⭐️ ║"
-          echo "║ 🚀 READY FOR NEXT QUEST! 🚀  ║"
-          echo "╚═══🎮════════════════════🎮═══╝"
+          echo "╔═══🗃️══════════🗃️═══╗"
+          echo "      🗂️DATABASE MIGRATED🗂️  "
+          echo " 🔒SECURITY PATCH APPLIED🔒 "
+          echo "   💾BACKUPS COMPLETED💾  "
+          echo "╚═══🗃️══════════🗃️═══╝"
           echo ""
 
       - name: 📝 Generate Next Cool Level (no ASCII)
@@ -83,11 +83,11 @@ jobs:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            <b>╔═══🎮══════════🎮═══╗</b>
-            <b>      🕹️<b>LEVEL UP UNLOCKED</b>🕹️  </b>
-            <b> ⭐️<b>ACHIEVEMENT UNLOCKED</b>⭐️ </b>
-            <b>   🚀READY FOR NEXT QUEST🚀  </b>
-            <b>╚═══🎮══════════🎮═══╝</b>
+            <b>╔═══🗃️══════════🗃️═══╗</b>
+            <b>      🗂️<b>DATABASE MIGRATED</b>🗂️  </b>
+            <b> 🔒<b>SECURITY PATCH APPLIED</b>🔒 </b>
+            <b>   💾BACKUPS COMPLETED💾  </b>
+            <b>╚═══🗃️══════════🗃️═══╝</b>
 
             <b>• 🧩 Feature ID :</b> <b>${{ env.LEVEL_NAME }}</b>
             <b>• 🌐 Git Repo :</b> <b>${{ github.repository }}</b>
