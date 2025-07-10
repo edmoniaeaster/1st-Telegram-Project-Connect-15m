@@ -37,6 +37,22 @@ jobs:
             "Turbo" "Rogue" "Elemental" "Surge" "Radiant" "Zenith" "Prime" "Sentinel" "Golem" "Mystic"
           )
 
+          programmer_quotes=(
+            "“Talk is cheap. Show me the code.” – Linus Torvalds"
+            "“Programs must be written for people to read, and only incidentally for machines to execute.” – Harold Abelson"
+            "“First, solve the problem. Then, write the code.” – John Johnson"
+            "“Simplicity is the soul of efficiency.” – Austin Freeman"
+            "“Code is like humor. When you have to explain it, it’s bad.” – Cory House"
+            "“Experience is the name everyone gives to their mistakes.” – Oscar Wilde"
+            "“Fix the cause, not the symptom.” – Steve Maguire"
+            "“Before software can be reusable it first has to be usable.” – Ralph Johnson"
+            "“Make it work, make it right, make it fast.” – Kent Beck"
+            "“The best error message is the one that never shows up.” – Thomas Fuchs"
+          )
+
+          RANDOM_QUOTE="${programmer_quotes[$RANDOM % ${#programmer_quotes[@]}]}"
+          echo "PROGRAMMER_QUOTE=$RANDOM_QUOTE" >> $GITHUB_ENV
+
           mkdir -p levels
 
           last_name=""
@@ -97,6 +113,7 @@ jobs:
 
             <b>#DeployLikeAPro #DevOpsMode</b>
             <b>💯 This script was 100% created by Abie Haryatmo</b>
+            <i>${{ env.PROGRAMMER_QUOTE }}</i>
           format: html
 
       - name: 🤖 Configure Git
